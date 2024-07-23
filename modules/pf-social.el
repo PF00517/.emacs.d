@@ -15,7 +15,7 @@
   ; (telega-load . telega-autoplay-mode)
   ; (telega-load . global-telega-url-shorten)
   ; (telega-chat-mode . company-mode)
-  ; :bind (:map pf-global-map ("C-c t" . telega-prefix-map))
+  :bind (:map pf-global-map ("C-c t" . telega-prefix-map))
   :config
   (setq telega-use-tracking-for '(or unmuted mention)
         telega-completing-read-function #'completing-read
