@@ -142,7 +142,7 @@
   (unicode-fonts-setup)
   (custom-set-faces 
    '(default ((t (:family "Fira Mono" :height 100)))) 
-   '(variable-pitch ((t (:family "Fira Code" :height 100)))))) 
+   '(italic ((t (:family "IBM Plex Mono" :slant italic :height 100)))))) 
 
 (use-package crux
   :commands (sudo
