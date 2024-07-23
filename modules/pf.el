@@ -18,8 +18,8 @@
 
 (ad-activate 'load)
 
-; (require 'pf-straight) 
-; (require 'pf-modules) 
+(require 'pf-straight) 
+(require 'pf-modules) 
 
 (define-hook after-init-hook () 
   (setq debug-on-error nil)) 
