@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package magit
   :commands magit
@@ -12,7 +12,7 @@
 (use-package magit-todos
   :demand t
   :after magit
-  :custom
+  :custom 
   (magit-todos-keywords-list (mapcar #'car hl-todo-keyword-faces))
   (magit-todos-auto-group-items 50)
   (magit-todos-exclude-globs '(".git/" "docs/"))
@@ -28,4 +28,4 @@
 
 (use-package git-modes)
 
-(provide 'shinmera-magit)
+(provide 'pf-magit)

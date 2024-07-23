@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package elixir-mode
   :commands (elixir-mode)
@@ -8,4 +8,4 @@
   :demand t
   :after (elixir-mode))
 
-(provide 'shinmera-elixir)
+(provide 'pf-elixir)

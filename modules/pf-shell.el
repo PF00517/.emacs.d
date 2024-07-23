@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package xterm-color
   :config (setenv "TERM" "xterm-256color"))
@@ -7,13 +7,13 @@
   :bind (:map eshell-mode-map ("C-c M-o" . eshell-clear-output))
   :config
   (define-hook eshell-before-prompt-hook ()
-    (setq xterm-color-preserve-properties t)))
+               (setq xterm-color-preserve-properties t)))
 
 (setq comint-output-filter-functions
       (remove 'ansi-color-process-output comint-output-filter-functions))
 
 (define-hook shell-mode-hook ()
-  (add-hook 'comint-preoutput-filter-functions 'xterm-color-filter nil t))
+             (add-hook 'comint-preoutput-filter-functions 'xterm-color-filter nil t))
 
 (defun eshell-clear-output ()
   (interactive)
@@ -21,4 +21,4 @@
     (erase-buffer)
     (eshell-send-input)))
 
-(provide 'shinmera-shell)
+(provide 'pf-shell)

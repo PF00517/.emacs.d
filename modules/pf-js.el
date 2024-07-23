@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package js2-mode
   :commands (js2-mode js2-minor-mode)
@@ -13,4 +13,4 @@
   :demand t
   :after (js2-mode))
 
-(provide 'shinmera-js)
+(provide 'pf-js)

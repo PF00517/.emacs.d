@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package web-mode
   :commands (web-mode)
@@ -16,11 +16,11 @@
 
 (use-package rainbow-mode
   :commands (rainbow-mode)
-  :hook (css-mode . rainbow-mode))
+  :hook css-mode)
 
 (use-package lass
   :commands (lass-mode)
   :straight (:type git :repo "https://github.com/shinmera/LASS")
   :mode ("\\.lass\\'" . lass-mode))
 
-(provide 'shinmera-web)
+(provide 'pf-web)

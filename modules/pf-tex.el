@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package auctex
   :commands (auctex-mode)
@@ -48,4 +48,4 @@
   :after (auctex)
   :hook (LaTeX-mode . citar-capf-setup))
 
-(provide 'shinmera-tex)
+(provide 'pf-tex)

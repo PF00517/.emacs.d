@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package perspective
   :commands persp-list-buffers
@@ -6,4 +6,4 @@
   :custom (persp-mode-prefix-key (kbd "C-c M-p"))
   :config (persp-mode))
 
-(provide 'shinmera-perspective)
+(provide 'pf-perspective)

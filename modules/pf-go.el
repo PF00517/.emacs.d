@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package go-mode
   :commands (go-mode)
@@ -8,4 +8,4 @@
   :demand t
   :after (go-mode company))
 
-(provide 'shinmera-go)
+(provide 'pf-go)

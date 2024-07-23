@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package evil
   :custom
@@ -7,4 +7,4 @@
   :config
   (evil-mode))
 
-(provide 'shinmera-vim)
+(provide 'pf-vim)

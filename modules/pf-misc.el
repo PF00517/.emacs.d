@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package dockerfile-mode
   :commands (dockerfile-mode)
@@ -47,4 +47,4 @@
   :commands (gdscript-mode)
   :mode ("\\.gd\\'" . gdscript-mode))
 
-(provide 'shinmera-misc)
+(provide 'pf-misc)

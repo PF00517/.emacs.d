@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package rustic
   :commands (rustic-mode)
@@ -9,4 +9,4 @@
   :demand t
   :after (rustic))
 
-(provide 'shinmera-rust)
+(provide 'pf-rust)

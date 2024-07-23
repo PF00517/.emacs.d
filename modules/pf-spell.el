@@ -1,6 +1,6 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
-(setq used-spelling-dictionaries '("en_GB" "en_US" "de_CH"))
+(setq used-spelling-dictionaries '("en_US" "en_GB" "ru_RU"))
 
 (use-package jinx
   :defer 2
@@ -24,10 +24,10 @@
 (defun switch-dictionary ()
   (interactive)
   (let* ((old ispell-current-dictionary)
-    	 (new (nth (mod (1+ (cl-position old used-spelling-dictionaries))
+         (new (nth (mod (1+ (cl-position old used-spelling-dictionaries))
                         (length used-spelling-dictionaries))
                    used-spelling-dictionaries)))
     (ispell-change-dictionary new)
     (message "Dictionary switched from %s to %s" old new)))
 
-(provide 'shinmera-spell)
+(provide 'pf-spell)

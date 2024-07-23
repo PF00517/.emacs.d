@@ -1,5 +1,5 @@
 ;; -*- mode: elisp; lexical-binding: t; -*-
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package elisp-mode
   :straight (:type built-in)
@@ -29,7 +29,7 @@
   (:map slime-inspector-mode-map
         ("," . slime-inspector-pop))
   (:map slime-repl-mode-map
-        ("" . nil)
+        ("" . nil)
         ("C-M-p" . slime-repl-backward-input)
         ("C-M-n" . slime-repl-forward-input)
         ("RET" . slime-repl-return-at-end)
@@ -84,8 +84,8 @@
   (when (or (eq system-type 'gnu/linux)
             (eq system-type 'darwin))
     (define-lisp-implementations
-        (abcl  ("abcl"))
-        (acl   ("alisp"))
+      (abcl  ("abcl"))
+      (acl   ("alisp"))
       (ccl   ("ccl"))
       (clasp ("clasp"))
       (clisp ("clisp"))
@@ -98,8 +98,8 @@
   
   (when (eq system-type 'windows-nt)
     (define-lisp-implementations
-        (ccl   ("wx86cl64.exe"))
-        (ccl32 ("wx86cl.exe"))
+      (ccl   ("wx86cl64.exe"))
+      (ccl32 ("wx86cl.exe"))
       (clisp ("clisp.exe"))
       (sbcl  ("sbcl.exe" "--dynamic-space-size" "8192")))))
 
@@ -112,4 +112,4 @@
 (when window-system
   (run-with-timer 1 0 'slime))
 
-(provide 'shinmera-lisp)
+(provide 'pf-lisp)

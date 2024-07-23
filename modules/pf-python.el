@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package python-mode
   :commands (python-mode)
@@ -9,4 +9,4 @@
   :after (python-mode flycheck)
   :hook (python-mode . flycheck-mode))
 
-(provide 'shinmera-python)
+(provide 'pf-python)

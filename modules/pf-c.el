@@ -1,10 +1,8 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package irony
   :commands (irony-mode)
-  :hook
-  (c-mode . irony-mode)
-  (c++-mode . irony-mode))
+  :hook (c-mode c++-mode))
 
 (use-package company-irony
   :demand t
@@ -51,4 +49,4 @@
   (shell-command
    (format "find '%s' -type f -regex '.*\.[ch]\(pp\|xx\)?' | etags -" dir-name)))
 
-(provide 'shinmera-c)
+(provide 'pf-c)

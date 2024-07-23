@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package arduino-mode
   :commands (arduino-mode)
@@ -14,4 +14,4 @@
   :after (company arduino-mode)
   :hook (irony-mode . company-arduino-turn-on))
 
-(provide 'shinmera-arduino)
+(provide 'pf-arduino)

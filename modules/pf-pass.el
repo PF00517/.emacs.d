@@ -1,7 +1,7 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package pass
   :demand t
   :config (auth-source-pass-enable))
 
-(provide 'shinmera-pass)
+(provide 'pf-pass)

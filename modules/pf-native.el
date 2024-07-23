@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package wakib-keys
   :hook
@@ -21,4 +21,4 @@
   :config
   (global-undo-tree-mode))
 
-(provide 'shinmera-native)
+(provide 'pf-native)

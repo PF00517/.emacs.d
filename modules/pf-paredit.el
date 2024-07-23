@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package paredit
   :defer 1
@@ -20,4 +20,4 @@
   (put 'paredit-backward-delete 'delete-selection 'supersede)
   (put 'paredit-newline 'delete-selection t))
 
-(provide 'shinmera-paredit)
+(provide 'pf-paredit)

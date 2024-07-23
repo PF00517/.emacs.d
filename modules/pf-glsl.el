@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package glsl-mode
   :commands (glsl-mode)
@@ -16,4 +16,4 @@
   ("\\.hlsl\\'" . hlsl-mode)
   ("\\.fx\\'" . hlsl-mode))
 
-(provide 'shinmera-glsl)
+(provide 'pf-glsl)

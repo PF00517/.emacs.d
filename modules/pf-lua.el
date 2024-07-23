@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package lua-mode
   :commands (lua-mode)
@@ -18,4 +18,4 @@
   :demand t
   :after (lua-mode))
 
-(provide 'shinmera-lua)
+(provide 'pf-lua)

@@ -1,4 +1,4 @@
-(require 'shinmera-straight)
+(require 'pf-straight)
 
 (use-package company
   :defer 0.5
@@ -25,4 +25,4 @@
 ;;   :custom (company-quickhelp-delay 0.7)
 ;;   :config (company-quickhelp-mode 1))
 
-(provide 'shinmera-company)
+(provide 'pf-company)
