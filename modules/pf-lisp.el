@@ -84,24 +84,24 @@
   (when (or (eq system-type 'gnu/linux)
             (eq system-type 'darwin))
     (define-lisp-implementations
-      (abcl  ("abcl"))
-      (acl   ("alisp"))
-      (ccl   ("ccl"))
-      (clasp ("clasp"))
-      (clisp ("clisp"))
-      (cmucl ("cmucl" "-quiet"))
-      (ecl   ("ecl"))
-      (mkcl  ("mkcl"))
-      (xcl   ("xcl"))
-      (sbcl-win  ("sbcl-win" "--dynamic-space-size" "8192"))
-      (sbcl  ("sbcl" "--dynamic-space-size" "8192"))))
+     (abcl  ("abcl"))
+     (acl   ("alisp"))
+     (ccl   ("ccl"))
+     (clasp ("clasp"))
+     (clisp ("clisp"))
+     (cmucl ("cmucl" "-quiet"))
+     (ecl   ("ecl"))
+     (mkcl  ("mkcl"))
+     (xcl   ("xcl"))
+     (sbcl-win  ("sbcl-win" "--dynamic-space-size" "8192"))
+     (sbcl  ("sbcl" "--dynamic-space-size" "8192"))))
   
   (when (eq system-type 'windows-nt)
     (define-lisp-implementations
-      (ccl   ("wx86cl64.exe"))
-      (ccl32 ("wx86cl.exe"))
-      (clisp ("clisp.exe"))
-      (sbcl  ("sbcl.exe" "--dynamic-space-size" "8192")))))
+     (ccl   ("wx86cl64.exe"))
+     (ccl32 ("wx86cl.exe"))
+     (clisp ("clisp.exe"))
+     (sbcl  ("sbcl.exe" "--dynamic-space-size" "8192")))))
 
 (use-package slime-company
   :demand t
@@ -109,7 +109,7 @@
   :hook
   ((slime-mode slime-repl-mode sldb-mode) . slime-company-maybe-enable))
 
-(when window-system
-  (run-with-timer 1 0 'slime))
+;; (when window-system
+;;   (run-with-timer 1 0 'slime))
 
 (provide 'pf-lisp)
