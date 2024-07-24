@@ -42,12 +42,12 @@
 (use-package openwith 
   :if window-system 
   :demand t 
-  :custom 
-  (openwith-associations '(("\\.png\\'" "geeqie" (file))
-                           ("\\.jpg\\'" "geeqie" (file))
-                           ("\\.jpeg\\'" "geeqie" (file))
-                           ("\\.gif\\'" "geeqie" (file))
-                           ("\\.svg\\'" "geeqie" (file))
+  :custom
+  (openwith-associations '(;; ("\\.png\\'" "geeqie" (file))
+                           ;; ("\\.jpg\\'" "geeqie" (file))
+                           ;; ("\\.jpeg\\'" "geeqie" (file))
+                           ;; ("\\.gif\\'" "geeqie" (file))
+                           ;; ("\\.svg\\'" "geeqie" (file))
                            ("\\.pdf\\'" "okular" (file))))
   :config (openwith-mode t))
 
@@ -202,8 +202,8 @@
 (setq enable-local-variables :all) 
 (setq use-short-answers t) 
 (setq vc-follow-symlinks t) 
-(setq browse-url-browser-function 'browse-url-generic) 
-(setq browse-url-generic-program (or (getenv "BROWSER") "xdg-open")) 
+(setq browse-url-browser-function 'browse-url-firefox) 
+; (setq browse-url-generic-program (or (getenv "BROWSER") "xdg-open")) 
 (setq ring-bell-function 'ignore) 
 (setq scroll-conservatively 101) 
 (setq scroll-preserve-screen-position 1) 

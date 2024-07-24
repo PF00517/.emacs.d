@@ -4,7 +4,7 @@
   :config (setenv "TERM" "xterm-256color"))
 
 (use-package eshell
-  :bind (:map eshell-mode-map ("C-c M-o" . eshell-clear-output))
+  ; :bind (:map eshell-mode-map ("C-c M-o" . eshell-clear-output))
   :config
   (define-hook eshell-before-prompt-hook ()
                (setq xterm-color-preserve-properties t)))
