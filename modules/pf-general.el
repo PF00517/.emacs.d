@@ -39,17 +39,17 @@
   :demand t 
   :config (doom-modeline-mode 1))
 
-(use-package openwith 
-  :if window-system 
-  :demand t 
-  :custom
-  (openwith-associations '(;; ("\\.png\\'" "geeqie" (file))
-                           ;; ("\\.jpg\\'" "geeqie" (file))
-                           ;; ("\\.jpeg\\'" "geeqie" (file))
-                           ;; ("\\.gif\\'" "geeqie" (file))
-                           ;; ("\\.svg\\'" "geeqie" (file))
-                           ("\\.pdf\\'" "okular" (file))))
-  :config (openwith-mode t))
+;; (use-package openwith 
+;;   :if window-system 
+;;   :demand t 
+;;   :custom
+;;   (openwith-associations '(("\\.png\\'" "geeqie" (file))
+;;                            ("\\.jpg\\'" "geeqie" (file))
+;;                            ("\\.jpeg\\'" "geeqie" (file))
+;;                            ("\\.gif\\'" "geeqie" (file))
+;;                            ("\\.svg\\'" "geeqie" (file))
+;;                            ("\\.pdf\\'" "okular" (file))))
+;;   :config (openwith-mode t))
 
 (use-package smex 
   :commands (smex smex-major-mode-commands)
