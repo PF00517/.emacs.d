@@ -24,7 +24,6 @@
         telega-emoji-use-images t
         telega-video-play-inline t
         telega-video-play-incrementally nil
-        ; telega-open-file-function 'org-open-file
         telega-video-player-command '(concat "mpc-hc64 /close"
                                              (when telega-ffplay-media-timestamp
                                                (format " /start %f" telega-ffplay-media-timestamp)))))
