@@ -1,4 +1,1 @@
-backups/
-eln-cache/
-straight/
-var/
+*.elc
