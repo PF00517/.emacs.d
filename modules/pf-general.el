@@ -39,17 +39,17 @@
   :demand t 
   :config (doom-modeline-mode 1))
 
-;; (use-package openwith 
-;;   :if window-system 
-;;   :demand t 
-;;   :custom
-;;   (openwith-associations '(("\\.png\\'" "geeqie" (file))
-;;                            ("\\.jpg\\'" "geeqie" (file))
-;;                            ("\\.jpeg\\'" "geeqie" (file))
-;;                            ("\\.gif\\'" "geeqie" (file))
-;;                            ("\\.svg\\'" "geeqie" (file))
-;;                            ("\\.pdf\\'" "okular" (file))))
-;;   :config (openwith-mode t))
+(use-package openwith 
+  :if window-system 
+  :demand t 
+  :custom
+  (openwith-associations '(("\\.png\\'" "geeqie" (file))
+                           ("\\.jpg\\'" "geeqie" (file))
+                           ("\\.jpeg\\'" "geeqie" (file))
+                           ("\\.gif\\'" "geeqie" (file))
+                           ("\\.svg\\'" "geeqie" (file))
+                           ("\\.pdf\\'" "okular" (file))))
+  :config (openwith-mode t))
 
 (use-package smex 
   :commands (smex smex-major-mode-commands)
@@ -141,8 +141,8 @@
   :config 
   (unicode-fonts-setup)
   (custom-set-faces 
-   '(default ((t (:family "Fira Mono" :height 100)))) 
-   '(italic ((t (:family "IBM Plex Mono" :slant italic :height 100)))))) 
+   '(default ((t (:family "Fira Mono" :height 145)))) 
+   '(italic ((t (:family "IBM Plex Mono" :slant italic :height 145)))))) 
 
 (use-package crux
   :commands (sudo
@@ -203,7 +203,7 @@
 (setq use-short-answers t) 
 (setq vc-follow-symlinks t) 
 (setq browse-url-browser-function 'browse-url-firefox) 
-; (setq browse-url-generic-program (or (getenv "BROWSER") "xdg-open")) 
+(setq browse-url-generic-program (or (getenv "BROWSER") "xdg-open")) 
 (setq ring-bell-function 'ignore) 
 (setq scroll-conservatively 101) 
 (setq scroll-preserve-screen-position 1) 
@@ -220,8 +220,8 @@
 (add-hook 'prog-mode-hook 'subword-mode)
 
 ;; set transparency
-(set-frame-parameter (selected-frame) 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
+;; (set-frame-parameter (selected-frame) 'alpha '(85 85))
+;; (add-to-list 'default-frame-alist '(alpha 85 85))
 
 (when window-system
   (context-menu-mode)
@@ -265,5 +265,8 @@
 
 (when (eq system-type 'linux)
   (add-to-path "/usr/local/bin"))
+
+(when (eq system-type 'gnu/linux)
+  (add-to-path "~/.guix-profile/bin"))
 
 (provide 'pf-general)

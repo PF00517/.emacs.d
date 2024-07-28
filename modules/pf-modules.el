@@ -2,10 +2,10 @@
 (require 'cl-lib) 
 
 (defvar pf-module-list 
-  '(:general :spell :pass :mail :perspective :treemacs :company :flycheck :magit :paredit :lisp :tex :web :js :c :java :shell :glsl :elixir :arduino :go :python :lua :rust :social :pdf :misc :vim :native))
+  '(:general :spell :pass :mail :perspective :treemacs :company :flycheck :magit :paredit :lisp :tex :web :js :c :java :shell :glsl :elixir :arduino :go :python :lua :rust :social :misc :vim :native))
 
 (defvar pf-default-module-list 
-  '(:general :spell :pass :mail :perspective :treemacs :company :flycheck :magit :paredit :lisp :tex :web :js :c :java :shell :glsl :elixir :arduino :go :python :lua :rust :social :pdf :misc)) 
+  '(:general :spell :pass :mail :perspective :treemacs :company :flycheck :magit :paredit :lisp :tex :web :js :c :java :shell :glsl :elixir :arduino :go :python :lua :rust :social :misc)) 
 
 (defcustom pf-modules (copy-sequence pf-default-module-list) 
   "Which modules to load on startup" 
